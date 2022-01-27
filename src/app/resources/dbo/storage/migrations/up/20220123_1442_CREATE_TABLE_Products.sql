@@ -1,0 +1,6 @@
+  CREATE TABLE IF NOT EXISTS
+  Products (
+    ID          INT PRIMARY KEY AUTO_INCREMENT
+  , Name        VARCHAR(255) NOT NULL
+  , Description VARCHAR(255) NOT NULL
+  );

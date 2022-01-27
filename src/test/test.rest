@@ -1,0 +1,6 @@
+POST http://localhost:3001/size
+
+{
+    "code":"PP",
+    "description":"Pequeno Pequeno"
+}

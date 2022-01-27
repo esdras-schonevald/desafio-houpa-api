@@ -1,0 +1,5 @@
+  CREATE TABLE IF NOT EXISTS
+  Categories (
+    ID          INT PRIMARY KEY AUTO_INCREMENT
+  , Name        VARCHAR(255) NOT NULL
+  );

@@ -1,0 +1,23 @@
+{
+    "name":"desafio-houpa/api",
+
+    "autoload": {
+        "psr-4": {
+            "Main\\": "src/core/main/",
+            "Basic\\": "src/core/basic/",
+            "Hooks\\": "src/core/hooks/",
+            "Models\\": "src/app/models/",
+            "Views\\": "src/app/views/",
+            "Controllers\\": "src/app/controllers/",
+            "Services\\": "src/app/resources/services/",
+            "Connectors\\": "src/app/resources/dbo/connectors/",
+            "DAO\\": "src/app/resources/dbo/dao/",
+            "Entities\\": "src/app/resources/entities/",
+            "Adapters\\": "src/bundles/adapters/",
+            "Drivers\\": "src/bundles/drivers/"
+        }
+    },
+    "require": {
+        "symfony/yaml": "^6.0"
+    }
+}

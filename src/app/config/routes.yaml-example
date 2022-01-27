@@ -1,0 +1,12 @@
+---
+/:                  HomeController@index
+/home:              HomeController@index
+
+/get/all:           GetAllController@both
+/get/all/buy:       GetAllController@buy
+/get/all/sell:      GetAllController@sell
+
+/get/{limit}:       GetLimitController@both
+/get/{limit}/buy:   GetLimitController@buy
+/get/{limit}/sell:  GetLimitController@sell
+...

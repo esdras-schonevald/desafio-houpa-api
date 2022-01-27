@@ -1,0 +1,13 @@
+---
+# Arquivo de configuração principal
+
+FILES:
+  routes: ../../app/config/routes.yaml
+
+PATHS:
+  templates: app/views/src/templates
+  exceptions: app/views/src/exceptions
+
+SETTINGS:
+  template_extension: php
+...

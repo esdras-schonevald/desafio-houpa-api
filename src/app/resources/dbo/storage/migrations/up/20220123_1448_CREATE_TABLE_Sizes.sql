@@ -1,0 +1,6 @@
+  CREATE TABLE IF NOT EXISTS
+  Sizes (
+    ID          INT PRIMARY KEY AUTO_INCREMENT
+  , Code        VARCHAR(5) NOT NULL
+  , Description VARCHAR(255)
+  );

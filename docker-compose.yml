@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    volumes:
+      - ./:/var/www
+    environment:
+      - DBHOST=api-mysql
+      - DBNAME=DesafioHoupa
+      - DBUSER=root
+      - DBPASSWORD=root
+    depends_on:
+      - api-mysql
+
+  api-mysql:
+    image: mysql:5.7.22
+    restart: always
+    ports:
+      - "3306"
+    volumes:
+      - ./.docker/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: DesafioHoupa
+      MYSQL_ROOT_PASSWORD: root
+
+  api-nginx:
+    build: ./.docker/nginx
+    restart: always
+    ports:
+      - "3001:80"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - api

@@ -1,0 +1,31 @@
+---
+/:                CategoryController
+
+/category:        CategoryController
+/category/{id}:   CategoryController
+
+/product:         ProductController
+/product/{id}:    ProductController
+
+/item:            ItemController
+/item/{id}:       ItemController
+
+/size:            SizeController
+/size/{id}:       SizeController
+
+/color:           ColorController
+/color/{id}:      ColorController
+
+/category/product:
+  ProductCategoryController
+/category/{categoryId}/product:
+  ProductCategoryController
+/category/{categoryId}/product/{productId}:
+  ProductCategoryController
+/product/category:
+  ProductCategoryController
+/product/{productId}/category:
+  ProductCategoryController
+/product/{productId}/category/{categoryId}:
+  ProductCategoryController
+...

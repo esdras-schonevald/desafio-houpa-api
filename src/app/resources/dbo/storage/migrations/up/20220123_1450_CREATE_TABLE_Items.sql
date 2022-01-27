@@ -1,0 +1,11 @@
+  CREATE TABLE IF NOT EXISTS
+  Items (
+    ID          INT PRIMARY KEY AUTO_INCREMENT
+  , ProductID   INT NOT NULL
+  , SizeID      INT NOT NULL
+  , ColorID     INT NOT NULL
+
+  , CONSTRAINT FK_ProductItem FOREIGN KEY (ProductID) REFERENCES Products(ID)
+  , CONSTRAINT FK_SizeItem    FOREIGN KEY (SizeID)    REFERENCES Sizes(ID)
+  , CONSTRAINT FK_ColorItem   FOREIGN KEY (ColorID)   REFERENCES Colors(ID)
+  );

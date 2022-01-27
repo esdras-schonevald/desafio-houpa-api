@@ -1,0 +1,4 @@
+.docker/db/*
+vendor
+composer.lock
+.vscode
